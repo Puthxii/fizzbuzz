@@ -1,6 +1,12 @@
 class FizzBuzz {
   static say(number) {
-    return 1;
+    if (number % 3 == 0) {
+      return "fizz";
+    } else if (number % 5 == 0) {
+      return "buzz";
+    } else {
+      return number;
+    }
   }
 }
 
