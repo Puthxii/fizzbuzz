@@ -24,4 +24,14 @@ describe("Test Fizz", () => {
     const result = FizzBuzz.say(5);
     expect(result).toEqual("buzz"); // assert function
   });
+
+  test("Test 15 expect fizz buzz", () => {
+    const result = FizzBuzz.say(15);
+    expect(result).toEqual("fizz buzz"); // assert function
+  });
+
+  test("Test 18 expect fizz", () => {
+    const result = FizzBuzz.say(18);
+    expect(result).toEqual("fizz"); // assert function
+  });
 });
