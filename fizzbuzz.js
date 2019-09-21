@@ -1,14 +1,24 @@
 class FizzBuzz {
   static say(number) {
-    if (number % 3 == 0 && number % 5 == 0) {
-      return "fizz buzz";
-    } else if (number % 3 == 0) {
-      return "fizz";
-    } else if (number % 5 == 0) {
-      return "buzz";
-    } else {
-      return number;
+    let result = number;
+    switch (true) {
+      case number % 3 === 0 && number % 5 === 0:
+        result = "fizz buzz";
+        // code block
+        break;
+      case number % 3 === 0:
+        result = "fizz";
+        // code block
+        break;
+      case number % 5 === 0:
+        result = "buzz";
+        // code block
+        break;
+      default:
+        result = number;
+      // code block
     }
+    return result;
   }
 }
 
